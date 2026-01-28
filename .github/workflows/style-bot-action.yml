@@ -11,9 +11,10 @@ permissions:
 
 jobs:
   style:
-    uses: huggingface/huggingface_hub/.github/workflows/style-bot-action.yml@main
+    uses: ./.github/workflows/style-bot-action-local.yml
+    # uses: huggingface/huggingface_hub/.github/workflows/style-bot-action.yml@main
     with:
       python_quality_dependencies: "[quality]"
       style_command_type: "style_only"
     secrets:
-      bot_token: ${{ secrets.TOKEN_TEST }}
+      bot_token: ${{ secrets.BOT_TOKEN }}
