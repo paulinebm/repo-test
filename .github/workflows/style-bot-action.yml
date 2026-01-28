@@ -17,4 +17,4 @@ jobs:
       python_quality_dependencies: "[quality]"
       style_command_type: "style_only"
     secrets:
-      bot_token: ${{ secrets.TOKEN_TEST }}
+      bot_token: ${{ secrets.BOT_TOKEN }}
